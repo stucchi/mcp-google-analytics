@@ -1,5 +1,7 @@
 # Google Analytics 4 MCP Server
 
+<!-- mcp-name: io.github.stucchi/google-analytics -->
+
 MCP server for Google Analytics 4 — create properties, configure data streams, manage conversions, and run reports via the Admin & Data APIs.
 
 ## Setup (one-time, ~3 minutes)

@@ -13,3 +13,6 @@ venv/
 
 # Service account credentials - NEVER commit these
 credentials.json
+
+# MCP registry publisher
+.mcpregistry_*
