@@ -49,7 +49,7 @@ Add to `claude_desktop_config.json`:
 ### From source
 
 ```bash
-git clone https://github.com/stucchi/google-analytics-mcp.git
+git clone https://github.com/stucchi/mcp-google-analytics.git
 cd google-analytics-mcp
 uv run google-analytics-mcp
 ```

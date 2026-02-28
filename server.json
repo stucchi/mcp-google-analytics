@@ -4,7 +4,7 @@
   "title": "Google Analytics 4",
   "description": "Create GA4 properties, configure data streams, manage conversions and custom dimensions, and run reports - all via MCP tools with Service Account authentication.",
   "repository": {
-    "url": "https://github.com/stucchi/google-analytics-mcp",
+    "url": "https://github.com/stucchi/mcp-google-analytics",
     "source": "github"
   },
   "version": "0.1.0",
