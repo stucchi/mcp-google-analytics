@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.stucchi/google-analytics",
   "title": "Google Analytics 4",
-  "description": "Create GA4 properties, configure data streams, manage conversions and custom dimensions, and run reports - all via MCP tools with Service Account authentication.",
+  "description": "Manage GA4 properties, data streams, conversions, and run reports via Admin & Data APIs.",
   "repository": {
     "url": "https://github.com/stucchi/mcp-google-analytics",
     "source": "github"
