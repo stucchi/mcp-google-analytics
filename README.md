@@ -18,7 +18,7 @@ MCP server for Google Analytics 4 — create properties, configure data streams,
 
 4. **Configure credentials** (pick one):
    - **Option A** (recommended): Copy the JSON content into the `GA_CREDENTIALS` env var in your MCP config
-   - **Option B**: Save the file to `~/.google-analytics-mcp/credentials.json`
+   - **Option B**: Save the file to `~/.google-analytics-4-mcp/credentials.json`
 
 Done. No browser flow, no consent screen, no tokens to refresh.
 
@@ -27,7 +27,7 @@ Done. No browser flow, no consent screen, no tokens to refresh.
 ### Claude Code
 
 ```bash
-claude mcp add google-analytics -e GA_CREDENTIALS='{"type":"service_account",...}' -- uvx google-analytics-mcp
+claude mcp add google-analytics -e GA_CREDENTIALS='{"type":"service_account",...}' -- uvx google-analytics-4-mcp
 ```
 
 ### Claude Desktop
@@ -39,7 +39,7 @@ Add to `claude_desktop_config.json`:
   "mcpServers": {
     "google-analytics": {
       "command": "uvx",
-      "args": ["google-analytics-mcp"],
+      "args": ["google-analytics-4-mcp"],
       "env": {
         "GA_CREDENTIALS": "{\"type\":\"service_account\",\"project_id\":\"...\", ...}"
       }
@@ -52,8 +52,8 @@ Add to `claude_desktop_config.json`:
 
 ```bash
 git clone https://github.com/stucchi/mcp-google-analytics.git
-cd google-analytics-mcp
-uv run google-analytics-mcp
+cd mcp-google-analytics
+uv run google-analytics-4-mcp
 ```
 
 ## Getting Started
@@ -108,7 +108,7 @@ uv run google-analytics-mcp
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `GA_CREDENTIALS` | — | Service Account JSON key content (copy-paste the entire JSON) |
-| `GA_CREDENTIALS_PATH` | `~/.google-analytics-mcp/credentials.json` | Alternative: path to the JSON key file |
+| `GA_CREDENTIALS_PATH` | `~/.google-analytics-4-mcp/credentials.json` | Alternative: path to the JSON key file |
 
 `GA_CREDENTIALS` takes priority over `GA_CREDENTIALS_PATH`.
 

@@ -61,7 +61,7 @@ Google Analytics MCP is not configured yet. Follow these steps:
      "mcpServers": {
        "google-analytics": {
          "command": "uvx",
-         "args": ["google-analytics-mcp"],
+         "args": ["google-analytics-4-mcp"],
          "env": {
            "GA_CREDENTIALS": "<paste the entire JSON here>"
          }
@@ -70,7 +70,7 @@ Google Analytics MCP is not configured yet. Follow these steps:
    }
 
    Example for Claude Code:
-   claude mcp add google-analytics -e GA_CREDENTIALS='<paste JSON>' -- uvx google-analytics-mcp
+   claude mcp add google-analytics -e GA_CREDENTIALS='<paste JSON>' -- uvx google-analytics-4-mcp
 
 That's it! Restart your MCP client and try again.\
 """

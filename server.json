@@ -10,7 +10,7 @@
   "version": "0.1.0",
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/stucchi/google-analytics-mcp/main/assets/icon.png",
+      "src": "https://raw.githubusercontent.com/stucchi/mcp-google-analytics/main/assets/icon.png",
       "mimeType": "image/png",
       "sizes": ["1024x1024"]
     }
@@ -18,7 +18,7 @@
   "packages": [
     {
       "registryType": "pypi",
-      "identifier": "google-analytics-mcp",
+      "identifier": "google-analytics-4-mcp",
       "version": "0.1.0",
       "transport": {
         "type": "stdio"
