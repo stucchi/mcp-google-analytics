@@ -1,0 +1,41 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.stucchi/google-analytics",
+  "title": "Google Analytics 4",
+  "description": "Create GA4 properties, configure data streams, manage conversions and custom dimensions, and run reports - all via MCP tools with Service Account authentication.",
+  "repository": {
+    "url": "https://github.com/stucchi/google-analytics-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/stucchi/google-analytics-mcp/main/assets/icon.png",
+      "mimeType": "image/png",
+      "sizes": ["1024x1024"]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "google-analytics-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GA_CREDENTIALS",
+          "description": "Google Service Account JSON key content (copy-paste the entire JSON)",
+          "required": false
+        },
+        {
+          "name": "GA_CREDENTIALS_PATH",
+          "description": "Alternative: path to the Service Account JSON key file",
+          "required": false,
+          "default": "~/.google-analytics-mcp/credentials.json"
+        }
+      ]
+    }
+  ]
+}
