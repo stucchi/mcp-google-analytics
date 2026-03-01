@@ -17,6 +17,7 @@ from google.analytics.admin_v1beta.types import (
     GoogleAdsLink,
     KeyEvent,
     ListMeasurementProtocolSecretsRequest,
+    ListPropertiesRequest,
     MeasurementProtocolSecret,
     Property,
 )
@@ -49,9 +50,8 @@ async def list_properties(account_id: str) -> list[dict]:
         account_id: The account ID (e.g. "123456789").
     """
     client = _client()
-    pages = await run_sync(
-        client.list_properties, filter=f"parent:accounts/{account_id}"
-    )
+    request = ListPropertiesRequest(filter=f"parent:accounts/{account_id}")
+    pages = await run_sync(client.list_properties, request=request)
     return [proto_to_dict(p) for p in pages]
 
 

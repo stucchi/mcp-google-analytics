@@ -332,6 +332,34 @@ wheels = [
 ]
 
 [[package]]
+name = "google-analytics-4-mcp"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "google-analytics-admin" },
+    { name = "google-analytics-data" },
+    { name = "google-auth" },
+    { name = "mcp", extra = ["cli"] },
+]
+
+[package.optional-dependencies]
+dev = [
+    { name = "pytest" },
+    { name = "pytest-asyncio" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "google-analytics-admin", specifier = ">=0.25.0" },
+    { name = "google-analytics-data", specifier = ">=0.20.0" },
+    { name = "google-auth", specifier = ">=2.0.0" },
+    { name = "mcp", extras = ["cli"], specifier = ">=1.26.0" },
+    { name = "pytest", marker = "extra == 'dev'" },
+    { name = "pytest-asyncio", marker = "extra == 'dev'" },
+]
+provides-extras = ["dev"]
+
+[[package]]
 name = "google-analytics-admin"
 version = "0.27.0"
 source = { registry = "https://pypi.org/simple" }
@@ -362,34 +390,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/29/ec/a3ace1e5c6308f798
 wheels = [
     { url = "https://files.pythonhosted.org/packages/52/9d/84f043f125dc3b8285ed5e68b983bc6fa90abb22129847f98e51fff720a4/google_analytics_data-0.20.0-py3-none-any.whl", hash = "sha256:2b2e7fd1e801897073b8501127c7fb5f12df69fc2c0fb46c264813a51292ea78", size = 192755, upload-time = "2026-01-09T14:52:34.837Z" },
 ]
-
-[[package]]
-name = "google-analytics-mcp"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "google-analytics-admin" },
-    { name = "google-analytics-data" },
-    { name = "google-auth" },
-    { name = "mcp", extra = ["cli"] },
-]
-
-[package.optional-dependencies]
-dev = [
-    { name = "pytest" },
-    { name = "pytest-asyncio" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "google-analytics-admin", specifier = ">=0.25.0" },
-    { name = "google-analytics-data", specifier = ">=0.20.0" },
-    { name = "google-auth", specifier = ">=2.0.0" },
-    { name = "mcp", extras = ["cli"], specifier = ">=1.26.0" },
-    { name = "pytest", marker = "extra == 'dev'" },
-    { name = "pytest-asyncio", marker = "extra == 'dev'" },
-]
-provides-extras = ["dev"]
 
 [[package]]
 name = "google-api-core"

@@ -7,7 +7,7 @@
     "url": "https://github.com/stucchi/mcp-google-analytics",
     "source": "github"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "icons": [
     {
       "src": "https://raw.githubusercontent.com/stucchi/mcp-google-analytics/main/assets/icon.png",
@@ -19,7 +19,7 @@
     {
       "registryType": "pypi",
       "identifier": "google-analytics-4-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": {
         "type": "stdio"
       },
